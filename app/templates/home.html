@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Concurso — Simulação{% endblock %}
+{% block content %}
+<section class="hero"><div class="container"><div class="hero-content">
+  <p class="kicker">SELEÇÃO EXTERNA • SIMULAÇÃO</p>
+  <h1>Concurso do Banco do Brasil</h1>
+  <h2>Confira o resultado da Seleção externa 2026/001</h2>
+  <p>O último concurso externo divulgado teve grande procura. Nesta atividade, a aparência de um portal de concursos é usada para ensinar como identificar páginas falsas.</p>
+  <p>Saiba tudo o que já aconteceu até agora.</p>
+</div></div></section>
+<section class="cards-area"><div class="container cards"><article><div class="pic p1"></div><h3>Seleção externa BB</h3><p>Concursos em andamento, editais e perguntas frequentes.</p></article><article><div class="pic p2"></div><h3>Agente Comercial</h3><p>Conheça a carreira, seus benefícios e suas vantagens.</p></article><article><div class="pic p3"></div><h3>Agente de Tecnologia</h3><p>Conheça a carreira, seus beneficios e suas vantagens.</p></article><article><div class="pic p4"></div><h3>Admissão no BB</h3><p>Informações sobre processo admissional e qualificação BB.</p></article></div></section>
+<section id="inscricao" class="signup"><div class="signup-box"><div class="signup-copy"><p class="kicker">SELEÇÃO EXTERNA BB</p><h2>Receba novidades sobre o concurso</h2><p>Cadastre seus dados para acompanhar novas informaçoes da seleção.</p><p class="warning">Atenção: use somente dados de teste nesta atividade.</p></div><div class="form-side"><form method="post" action="{{ url_for('main.cadastro') }}"><label>Nome completo</label><input name="name" type="text" placeholder="Digite seu nome completo" required><label>E-mail</label><input name="email" type="email" placeholder="Digite seu e-mail" required><button type="submit">Inscrever-se</button></form></div></div></section>
+{% endblock %}

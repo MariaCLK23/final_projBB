@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+{% block title %}Cadastro concluído — Simulação{% endblock %}
+{% block content %}
+<section class="success"><div class="success-box"><div class="check">✓</div><p class="kicker">ETAPA CONCLUÍDA</p><h1>Cadastro feito com sucesso!</h1><p>Seu cadastro foi realizado com sucesso. Clique abaixo para acompanhar sua inscrição.</p><a class="success-btn" href="{{ url_for('main.seguranca') }}">Clique aqui para acompanhar sua inscrição</a><div class="reveal"><b>🔐 Você acabou de participar de uma simulação de phishing.</b><p>Esta é uma atividade acadêmica de conscientização. Não use dados reais e nunca informe senhas ou dados bancários em páginas suspeitas.</p></div></div></section>
+{% endblock %}
